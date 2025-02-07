@@ -8,7 +8,7 @@ AOS.init();
 const About = () => {
     const navigate = useNavigate();
     return (
-        <div className=" text-white">
+        <div className=" text-white w-full min-h-screen">
             <div className="max-w-6xl mx-auto px-4 py-20">
 
                 {/* Header Section */}

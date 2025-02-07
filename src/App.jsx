@@ -38,10 +38,10 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Home />} />
+          <Route path="/portfolio/about" element={<About />} />
+          <Route path="/portfolio/projects" element={<Projects />} />
+          <Route path="/portfolio/contact" element={<Contact />} />
         </Routes>
 
         <Footer />

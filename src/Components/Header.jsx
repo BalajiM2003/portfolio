@@ -26,10 +26,10 @@ const Header = () => {
 
                 {/* Desktop Navigation */}
                 <div className='space-x-10 text-xl font-medium  hidden lg:flex md:flex sm:flex justify-end pr-10'>
-                    <button onClick={() => navigate("/")} className='hover:text-sky-100  cursor-pointer'>Home</button>
-                    <button onClick={() => navigate("/about")} className='hover:text-sky-100  cursor-pointer'>About</button>
-                    <button onClick={() => navigate("/projects")} className='hover:text-sky-100  cursor-pointer'>Projects</button>
-                    <button onClick={() => navigate("/contact")} className='hover:text-sky-100  cursor-pointer'>Contact</button>
+                    <button onClick={() => navigate("/portfolio")} className='hover:text-sky-100  cursor-pointer'>Home</button>
+                    <button onClick={() => navigate("/portfolio/about")} className='hover:text-sky-100  cursor-pointer'>About</button>
+                    <button onClick={() => navigate("/portfolio/projects")} className='hover:text-sky-100  cursor-pointer'>Projects</button>
+                    <button onClick={() => navigate("/portfolio/contact")} className='hover:text-sky-100  cursor-pointer'>Contact</button>
 
                 </div>
             </div>
@@ -39,21 +39,21 @@ const Header = () => {
                 <div className=" lg:hidden md:hidden sm:hidden transition-all duration-300 ease-in-out  ">
                     <nav className="text-white bg-transparent shadow-sm shadow-purple-800  py-4 space-y-4   w-64 rounded-lg   right-10 mt-6 ml-auto mr-10  pl-25">
                         <button onClick={() => {
-                            navigate("/");
+                            navigate("/portfolio");
                             setIsOpen(false);
                         }} className="block hover:text-purple-800  cursor-pointer">Home</button>
                         <button onClick={() => {
-                            navigate("/about");
+                            navigate("/portfolio/about");
                             setIsOpen(false);
                         }
                         } className="block hover:text-purple-800  cursor-pointer">About</button>
                         <button onClick={() => {
-                            navigate("/projects");
+                            navigate("/portfolio/projects");
                             setIsOpen(false);
                         }
                         } className="block hover:text-purple-800  cursor-pointer">Projects</button>
                         <button onClick={() => {
-                            navigate("/contact");
+                            navigate("/portfolio/contact");
                             setIsOpen(false);
                         }
                         } className="block hover:text-purple-800 cursor-pointer">Contact</button>
